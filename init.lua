@@ -1,4 +1,4 @@
-vim.cmd.colorscheme("habamax")
+vim.cmd.colorscheme("industry")
 vim.g.mapleader = " "
 vim.opt.ai = true
 vim.opt.nu = true
