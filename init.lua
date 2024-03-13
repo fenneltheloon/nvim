@@ -125,6 +125,8 @@ vim.cmd([[
 ]])
 -- racket support -------------------------------------------------------------
 require 'lspconfig'.racket_langserver.setup {}
+-- rust support ---------------------------------------------------------------
+require 'lspconfig'.rust_analyzer.setup {}
 -- barbar keymaps -------------------------------------------------------------
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
