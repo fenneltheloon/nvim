@@ -12,3 +12,13 @@ vim.opt.sw = 4
 vim.opt.sta = true
 vim.opt.ts = 4
 vim.opt.clipboard = "unnamedplus"
+
+vim.keymap.set('n', ']d', function()
+	vim.diagnostic.goto_next()
+	vim.diagnostic.open_float()
+end)
+
+vim.keymap.set('n', '[d', function()
+	vim.diagnostic.goto_prev()
+	vim.diagnostic.open_float()
+end)
