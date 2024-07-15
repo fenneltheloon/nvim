@@ -13,12 +13,23 @@ vim.opt.sta = true
 vim.opt.ts = 4
 vim.opt.clipboard = "unnamedplus"
 
+local opts = { noremap = true, silent = true }
+
 vim.keymap.set('n', ']d', function()
 	vim.diagnostic.goto_next()
 	vim.diagnostic.open_float()
-end)
+end, opts)
 
 vim.keymap.set('n', '[d', function()
 	vim.diagnostic.goto_prev()
 	vim.diagnostic.open_float()
-end)
+end, opts)
+
+local function quickfix()
+	vim.lsp.buf.code_action({
+		filter = function(a) return a.isPreferred end,
+		apply = true
+	})
+end
+
+vim.keymap.set('n', '<leader>qf', quickfix, opts)
