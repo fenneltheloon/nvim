@@ -12,6 +12,7 @@ vim.opt.sw = 4
 vim.opt.sta = true
 vim.opt.ts = 4
 vim.opt.clipboard = "unnamedplus"
+vim.opt.mouse = ""
 
 vim.keymap.set('n', ']d', function()
 	vim.diagnostic.goto_next()
