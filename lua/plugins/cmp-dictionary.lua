@@ -3,7 +3,7 @@ return {
 	ft = 'lilypond',
 	opts = {
 		paths = {
-			"/opt/homebrew/share/lilypond/2.24.3/vim/syntax/lilypond-words",
+			"/opt/homebrew/Cellar/lilypond/2.24.4/share/lilypond/2.24.4/vim/syntax/lilypond-words"
 		},
 		exact_length = 2,
 		first_case_insensitive = true,
