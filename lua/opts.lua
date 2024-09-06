@@ -13,6 +13,7 @@ vim.opt.sta = true
 vim.opt.ts = 4
 vim.opt.clipboard = "unnamedplus"
 vim.opt.mouse = ""
+vim.opt.rtp:append("/opt/homebrew/opt/fzf")
 
 local opts = { noremap = true, silent = true }
 
