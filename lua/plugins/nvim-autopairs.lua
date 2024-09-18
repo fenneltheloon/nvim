@@ -5,8 +5,8 @@ return {
 	config = function(_, opts)
 		local npairs = require('nvim-autopairs')
 		local Rule = require('nvim-autopairs.rule')
+		local cond = require('nvim-autopairs.conds')
 		npairs.setup(opts)
 		npairs.add_rule(Rule("$", "$", { "tex", "typst" }))
-		npairs.add_rule(Rule("$ ", " $", "typst"))
 	end
 }
