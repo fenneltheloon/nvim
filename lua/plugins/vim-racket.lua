@@ -1,1 +1,4 @@
-return { "benknoble/vim-racket" }
+return {
+	"benknoble/vim-racket",
+	ft = "racket"
+}
