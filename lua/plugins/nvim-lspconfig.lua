@@ -4,6 +4,7 @@ return {
 	event = { 'BufReadPre', 'BufNewFile' },
 	dependencies = {
 		{ "williamboman/mason-lspconfig.nvim" },
+		{ 'saghen/blink.cmp' },
 	},
 	config = function()
 		local lsp_zero = require('lsp-zero')
