@@ -31,6 +31,7 @@ return {
 						settings = {
 							exportPdf = "onSave",
 						},
+						root_dir = '',
 					})
 				end
 			}
